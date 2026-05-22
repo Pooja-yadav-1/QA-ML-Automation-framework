@@ -11,26 +11,26 @@ qa-ml-automation-framework/
 ├── configs/
 │   └── test_config.yaml          # Thresholds, model paths, drift settings
 ├── data/
-│   ├── Telco_Customer_Churn.csv  # Dataset (download separately)
-│   └── X_test_reference.csv     # Auto-generated reference for drift detection
+│   ├── Telco_Customer_Churn.csv  # Dataset 
+│   └── X_test_reference.csv    
 ├── models/
 │   ├── xgboost.pkl               # Trained XGBoost model
 │   ├── random_forest.pkl         # Trained RandomForest model
 │   ├── svm.pkl                   # Trained SVM model
 │   └── feature_names.pkl         # Feature alignment reference
 ├── scripts/
-│   ├── train.py                  # Trains all 3 models
-│   └── predict.py                # Single inference script
+│   ├── train.py                  
+│   └── predict.py               
 ├── tests/
-│   ├── conftest.py               # Shared fixtures
-│   ├── test_data_validation.py   # Dataset integrity tests
-│   ├── test_model_training.py    # Accuracy, F1, reproducibility
-│   ├── test_predictions.py       # Output validation
-│   ├── test_robustness.py        # Edge case / noise tests
-│   └── test_data_drift.py        # KS test + PSI drift detection
+│   ├── conftest.py              
+│   ├── test_data_validation.py  
+│   ├── test_model_training.py    
+│   ├── test_predictions.py       
+│   ├── test_robustness.py        
+│   └── test_data_drift.py        
 ├── .github/workflows/
-│   └── ci.yml                    # GitHub Actions pipeline
-├── app.py                        # Streamlit dashboard
+│   └── ci.yml                    
+├── app.py
 └── requirements.txt
 ```
 
@@ -38,11 +38,8 @@ qa-ml-automation-framework/
 
 ## 🚀 Quick Start
 
-### 1. Clone & install
-```bash
-git clone https://github.com/DarSahran/qa-ml-automation-framework.git
-cd qa-ml-automation-framework
-pip install -r requirements.txt
+### 1. Install Necessary requirements
+
 ```
 
 ### 2. Add dataset
