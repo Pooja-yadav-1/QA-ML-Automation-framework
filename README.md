@@ -40,7 +40,7 @@ qa-ml-automation-framework/
 
 ### 1. Install Necessary requirements
 
-```
+
 
 ### 2. Add dataset
 Download [Telco Customer Churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn) and place it at `data/Telco_Customer_Churn.csv`.
@@ -79,9 +79,9 @@ streamlit run app.py
 
 | Model        | Accuracy | F1 Score |
 |-------------|----------|----------|
-| XGBoost     | ≥ 0.78   | ≥ 0.55   |
+| XGBoost     | ≥ 0.78   | ≥ 0.54   |
 | RandomForest| ≥ 0.76   | ≥ 0.52   |
-| SVM         | ≥ 0.74   | ≥ 0.50   |
+| SVM         | ≥ 0.73   | ≥ 0.50   |
 
 ---
 
@@ -93,6 +93,13 @@ Two methods are used:
 - **PSI** — Population Stability Index; PSI > 0.2 = significant distribution shift
 
 ---
+### 📈 Launch Dashboard
+py -m streamlit run app.py
+
+Open in browser:
+http://localhost:8501
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/6f6e7e1e-c88c-4ddd-87c1-17fa709883e6" />
+
 
 ## 🔧 Tech Stack
 
