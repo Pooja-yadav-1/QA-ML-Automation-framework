@@ -1,0 +1,43 @@
+data:
+  path: data/Telco_Customer_Churn.csv
+  target_column: Churn
+  required_columns:
+    - gender
+    - SeniorCitizen
+    - Partner
+    - Dependents
+    - tenure
+    - PhoneService
+    - MultipleLines
+    - InternetService
+    - OnlineSecurity
+    - OnlineBackup
+    - DeviceProtection
+    - TechSupport
+    - StreamingTV
+    - StreamingMovies
+    - Contract
+    - PaperlessBilling
+    - MonthlyCharges
+    - TotalCharges
+    - Churn
+
+models:
+  - name: XGBoost
+    path: models/xgboost.pkl
+    accuracy_threshold: 0.78
+    f1_threshold: 0.54
+
+  - name: RandomForest
+    path: models/random_forest.pkl
+    accuracy_threshold: 0.76
+    f1_threshold: 0.52
+
+  - name: SVM
+    path: models/svm.pkl
+    accuracy_threshold: 0.73
+    f1_threshold: 0.50
+
+drift:
+  ks_threshold: 0.05
+  psi_threshold: 0.2
